@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My first website </title>
+
+    <meta charset="UTF-8">
+    <meta name="Description" content="html tutorial">
+    <meta name="keywords" content="html,tutorial">
+    <meta name="author" content="etiya9">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+
+</head>
+    <body>
+
+        
+        
+        <a href="page2.html" target=_self title="This takes you to google">
+            Go to page 2
+        </a>
+
+        <a href="https://en.wikipedia.org/wiki/cat">
+        <img src="/images/cat.jpg" height="300" width="400" alt="şaşıran kedicik" title="kedyyy">
+        </a>
+
+        <div style="text-align: right;">
+            
+                <button onclick="doSomething()" style="background-color: yellow; color: purple; border-radius: 50px;">
+                    Click me
+                </button>
+                <p id="test">Hello</p>
+                <script>
+                    function doSomething(){
+                        document.getElementById("test").innerHTML="goodbye";
+                    }
+                </script>
+
+            
+        </div>
+
+
+        <audio controls autoplay muted loop>
+           <source src="Among The Stars.mp3">
+           <source src="Among The Stars.wav">
+           This browser does not support HTML5 audio.
+        </audio>
+
+        <p>This is normal text</p>
+        <p>This is <b>bold</b> text</p>
+        <p>This is <i>italic</i> text</p>
+        <p>This is <big>big</big> text</p>
+        <p>This is <small>small</small> text</p>
+        <p>This is <sub>subscription</sub> text</p>
+        <p>This is <ins>inserted</ins> text</p>
+        <p>This is <del>deleted</del> text</p>
+        <p>This is <mark>marked</mark> text</p>
+
+        <form action="action_page.php" method="POST">
+
+            <div>
+                <label for="fname">first name:</label>
+                <input type="text" id="fname" name="fname" placeholder="spongebob" required>
+            </div>
+            <br>
+    
+            <div>
+                <label for="lname">last name:</label>
+                <input type="lname" id="lname" name="lname" placeholder="squarepants" required>
+            </div>
+            <br>
+    
+            <div>
+                <label for="pass">password:</label>
+                <input type="password" id="pass" name="pass" maxlength="12" required>
+            </div>
+
+            <br>
+    
+            <div>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" placeholder="SPants@gmail.com">
+            </div>
+
+            <br>
+            <div>
+                <label for="phone">phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+            </div>
+
+
+            <br>
+            <div>
+                <label for="bdate">birthdate:</label>
+                <input type="date" id="bdate" name="bdate">
+            </div>
+
+            <br>
+            <div>
+                <label for="quantity">quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+            </div>
+    
+            <br>
+            <div>
+                <label for="title">title:</label>
+
+                <label for="Mr.">Mr.</label>
+                <input type="radio" id="Mr." name="title" value="Mr.">
+
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+                <label for="PhD.">PhD.</label>
+                <input type="radio" id="PhD."name="title" value="PhD.">
+            </div>
+
+            <br>
+            <div>
+                <label for="payment">payment:</label>
+                <select  id="payment" name="payment">
+                    <option value="visa">visa</option>
+                    <option value="mastercard">mastercard</option>
+                    <option value="giftcard">giftcard</option>
+                </select>
+            </div>
+
+            <br>
+            <div>
+                <label for="subscribe">subscribe:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+    
+            <br>
+    
+            <div>
+                <input type="reset">
+            </div>
+    
+            <br>
+    
+            <div>
+                <input type="submit">
+            </div>
+    
+           </form>
+
+        <h4>Unordered list</h4>
+        <ul>
+            <li>pizza dough</li>
+            <li>tomato sauce</li>
+            <li>cheese</li>
+            <li>toppings
+                <ul>
+                    <li>pepperoni</li>
+                    <li>mushrooms</li>
+                    <li>peppers</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Ordered list</h4>
+        <ol type="A">
+            <li>eat breakfast</li>
+            <li>take shower</li>
+            <li>leave for work</li>
+        </ol>
+
+        <h4>Description list</h4>
+        <dl>
+            <dt>HTML</dt>
+            <dd>This adds structure to a webpage</dd>
+            <dt>CSS</dt>
+            <dd>This adds style to a webpage</dd>
+            <dt>JavaScript</dt>
+            <dd>This adds functionality to a webpage</dd>
+        </dl>
+
+        <h3>Store Hours</h3>
+
+        <table bgcolor="black" width="700">
+            <tr bgcolor="grey">
+                <th width="100">Sunday</th>
+                <th width="100">Monday</th>
+                <th width="100">Tuesday</th>
+                <th width="100">Wednesday</th>
+                <th width="100">Thursday</th>
+                <th width="100">Friday</th>
+                <th width="100">Saturday</th>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <th>Closed</th>
+                <th>9-5</th>
+                <th>9-5</th>
+                <th>9-5</th>
+                <th>9-5</th>
+                <th>9-5</th>
+                <th>Closed</th>
+            </tr>
+        </table>
+
+        
+        <h1 style="color:red">Hello!</h1>
+        <h1 style="color: rgb(5,240,232)">Hello!</h1>
+        <h1 style="color:#28f005">Hello!</h1>
+
+        <p style="background-color:#222222; color:#28f005">
+            bzdhcbgljdhvblsvbljdfb
+        </p>
+
+
+        <div style="background-color: blue;">
+        <p>
+            Bajo el cielo estrellado,
+            donde susurran los vientos,
+            los sueños flotan en el aire,
+            como hojas en el tiempo.
+        </p>
+
+        <p>
+        <span style="color:red">La luna, reina brillante,
+         ilumina caminos perdidos,
+         susurra secretos antiguos,
+         de amores nunca olvidados.
+        </p>
+
+        <p>Caminando por senderos,
+         donde la noche es un canto,
+         el corazón late suave,
+        como un eco de encanto.</p>
+
+
+
+        
+       
+        <iframe style="border:0" src="ad.html" width="500" height="100">
+
+
+
+
+
+       
+            
+            
+           
+
+
+
+
+    </body>
+
+
+
+</html>
